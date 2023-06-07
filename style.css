@@ -1,0 +1,257 @@
+/* Style type text -  */
+@font-face {
+    font-family: "Uziel Cohen Font";
+    src: url(assets/fonts/Lobster/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Base Font";
+    src: url(assets/fonts/Saira/SairaCondensed-SemiBold.ttf);
+}
+
+/*------------- Key-Frames */
+@keyframes noteAnimation {
+    0% {
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 25%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    75% {
+        opacity: 75%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes colorAnimation {
+    25%{
+        background-color:rgb(227, 104, 104)
+    
+    }
+    50%{
+        background-color:lightpink
+    }
+    75%{
+        background-color:rgb(255, 225, 225)
+    }
+    100%{
+        background-color: lightpink;
+    }
+}
+
+
+
+/*--------------------------> Body */
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/images/background.jpg);
+    color: white;
+    font-family: "Base Font", "Uziel Cohen Font";
+
+}
+
+/* ------------->Header */
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: monospace;
+    margin-top: 10px;
+}
+
+.text-my-tasks{
+    margin-left: 50px;
+    margin-top: 55px;
+
+}
+
+h5 {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Uziel Cohen Font", "Base Font";
+    margin-top: 10px;
+}
+
+/* ------------->Form */
+
+.div-form {
+    display: flex;
+    justify-content: center;
+    font-family: 'Alkatra', cursive;
+    margin-top: 50px;
+
+
+}
+
+/* "Adjustable label - Add task */
+
+.input-group-text {
+    background-image: url(assets/images/background.jpg);
+    color: white;
+
+}
+
+/* --------------Date and time Container */
+
+.date-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: xx-large;
+    gap: 40px;
+
+}
+
+/* ----------------->Buttons of the form */
+.button-submit-reset {
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+
+}
+
+.button-sub {
+    background-color: green;
+}
+
+.button-res {
+    background-color: red;
+}
+
+/* ------------->Whole Container */
+
+#noteContainer {
+    width: 1520px;
+    height: 580px;
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+ 
+    
+
+    /* ---------->Current Time !~ */
+}
+
+.clock-time {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 43px;
+}
+
+#current-time {
+    font-size: xx-large;
+}
+
+
+/* ---------->Clear Notes Button */
+.clear-note-button {
+    display: flex;
+    border: 1px solid red;
+    font-size: xx-large;
+    margin-top: 115px;
+    margin-left: auto;
+    margin-right: 190px;
+
+
+}
+.clear-note-button:hover{
+    animation: colorAnimation 3s infinite; 
+    
+}
+
+
+/*-----------> Footer */
+
+.footer-div {
+    margin-right: 145px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    margin-left: 55px;
+    font-size: x-large;
+}
+
+
+/* ------------>JavaScript Section------------------ */
+
+/* --------------->The note himself */
+
+.js-my-note {
+    background-image: url(assets/images/notebg.png);
+    width: 150px;
+    height: 185px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Alkatra', cursive;
+    
+    
+    
+
+}
+
+
+
+.js-date-time {
+    color: black;
+    font-family: 'Alkatra', cursive;
+    margin-left: 5px;
+    margin-top: 5px;
+    
+    
+
+
+}
+
+.js-text-box {
+    color: black;
+    overflow-y: auto;
+    display: list-item;
+    height: 102px;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 25px;
+    width: 108px;
+    overflow-wrap: break-word;
+    
+}
+
+.js-note-animation{
+    animation: noteAnimation 2s normal forwards ease-in-out;
+    display: flex;
+
+}
+
+.js-reset-button {
+    display: none;
+
+
+}
+
+.js-my-note:hover .js-reset-button {
+    font-size: 10px;
+    border: none;
+    background: none;
+    margin-top: 10px;
+    margin-left: 5px;
+    border: 2px solid red;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+}
+
+
+/* ----------------------> */
