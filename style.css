@@ -33,17 +33,19 @@
 }
 
 @keyframes colorAnimation {
-    25%{
-        background-color:rgb(227, 104, 104)
-    
+    25% {
+        background-color: rgb(227, 104, 104)
     }
-    50%{
-        background-color:lightpink
+
+    50% {
+        background-color: lightpink
     }
-    75%{
-        background-color:rgb(255, 225, 225)
+
+    75% {
+        background-color: rgb(255, 225, 225)
     }
-    100%{
+
+    100% {
         background-color: lightpink;
     }
 }
@@ -61,6 +63,57 @@ body {
 }
 
 /* ------------->Header */
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+
+}
+
+/* Google form */
+.google-search{
+    display: flex;
+    margin-left: 20px;
+
+}
+.google-text-input{
+    border: 1px solid blueviolet;
+    border-radius: 1rem;
+    background-image: url(assets/images/background.jpg);
+    font-size: x-large;
+    
+}
+.google-submit-input{
+    border-radius: 1rem;
+    border: 2px solid blueviolet;
+    color: white;
+    background-image: url(assets/images/background.jpg);
+    font-size: larger;
+}
+.ask-google-text{
+    display: flex;
+    height: 53px;
+    margin-top: 36px;
+    /* align-content: space-between; */
+    align-items: flex-end;
+    font-family: "Uziel Cohen Font";
+    font-size: small;
+}
+.img-arrow-picture{
+    display: flex;
+    margin: auto;
+    
+
+}
+
+/*---------------------------- */
+
+
+.header-div {
+    margin: auto;
+    }
 
 h1 {
     text-align: center;
@@ -69,9 +122,13 @@ h1 {
     margin-top: 10px;
 }
 
-.text-my-tasks{
+.text-my-tasks {
     margin-left: 50px;
     margin-top: 55px;
+    margin-left: 50px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -80,6 +137,7 @@ h5 {
     font-size: 20px;
     font-family: "Uziel Cohen Font", "Base Font";
     margin-top: 10px;
+    margin-bottom: -14px;
 }
 
 /* ------------->Form */
@@ -88,10 +146,12 @@ h5 {
     display: flex;
     justify-content: center;
     font-family: 'Alkatra', cursive;
-    margin-top: 50px;
+   
 
 
 }
+
+
 
 /* "Adjustable label - Add task */
 
@@ -139,17 +199,21 @@ h5 {
     display: flex;
     flex-wrap: wrap;
     float: left;
- 
-    
 
-    /* ---------->Current Time !~ */
+
+
+
 }
+
+
+
+/* ---------->Current Time !~ */
+
 
 .clock-time {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-    margin-left: 43px;
 }
 
 #current-time {
@@ -159,31 +223,28 @@ h5 {
 
 /* ---------->Clear Notes Button */
 .clear-note-button {
+
     display: flex;
     border: 1px solid red;
-    font-size: xx-large;
+    font-size: x-large;
     margin-top: 115px;
-    margin-left: auto;
-    margin-right: 190px;
-
-
+    align-content: space-between;
+    width: 112px;
 }
-.clear-note-button:hover{
-    animation: colorAnimation 3s infinite; 
-    
+
+
+
+.clear-note-button:hover {
+    animation: colorAnimation 3s infinite;
+
 }
 
 
 /*-----------> Footer */
 
-.footer-div {
-    margin-right: 145px;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 50px;
-    margin-left: 55px;
-    font-size: x-large;
-}
+/* .footer-div {
+    
+} */
 
 
 /* ------------>JavaScript Section------------------ */
@@ -197,9 +258,9 @@ h5 {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Alkatra', cursive;
-    
-    
-    
+
+
+
 
 }
 
@@ -210,8 +271,8 @@ h5 {
     font-family: 'Alkatra', cursive;
     margin-left: 5px;
     margin-top: 5px;
-    
-    
+
+
 
 
 }
@@ -226,10 +287,10 @@ h5 {
     margin-top: 25px;
     width: 108px;
     overflow-wrap: break-word;
-    
+
 }
 
-.js-note-animation{
+.js-note-animation {
     animation: noteAnimation 2s normal forwards ease-in-out;
     display: flex;
 
