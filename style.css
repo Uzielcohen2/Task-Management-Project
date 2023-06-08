@@ -110,9 +110,23 @@ header {
 
 /*---------------------------- */
 
+.title-head{
+margin: auto;
+border-right: outset;
+
+}
+.by-uziel-cohen{
+    margin-right: 200px;
+    margin-bottom: 30px;
+}
+
 
 .header-div {
-    margin: auto;
+    width: 902px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     }
 
 h1 {
@@ -146,6 +160,7 @@ h5 {
     display: flex;
     justify-content: center;
     font-family: 'Alkatra', cursive;
+    margin-top: 54px;
    
 
 
@@ -195,7 +210,6 @@ h5 {
 #noteContainer {
     width: 1520px;
     height: 580px;
-    margin-top: 120px;
     display: flex;
     flex-wrap: wrap;
     float: left;
@@ -222,6 +236,10 @@ h5 {
 
 
 /* ---------->Clear Notes Button */
+.clear-note{
+    display: flex;
+    justify-content: flex-end;
+}
 .clear-note-button {
 
     display: flex;
@@ -242,9 +260,10 @@ h5 {
 
 /*-----------> Footer */
 
-/* .footer-div {
-    
-} */
+.footer-div {
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 /* ------------>JavaScript Section------------------ */
