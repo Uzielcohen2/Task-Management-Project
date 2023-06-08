@@ -15,22 +15,44 @@
 
 <body>
     <section>
-<!-- Header -->
+        <!-- Header -->
         <header>
-            <h1>My Task Board</h1>
-            <h5>By Uziel Cohen</h5>
-            <div class="clock-time">
-                <h3>Current-time:</h3>
-<!-- Current time -->
-                <h1 id="current-time"></h1>
+            <div class="google-search">
+
+                <form action="https://www.google.com/search?" method="get">
+                    <input type="text" name="q" placeholder="Ask Google" class="google-text-input">
+                    <input type="submit" value="Search" class="google-submit-input">
+                               <div class="ask-google-text">
+                    <h2>Ask google ↖</h2>
+                   
+                </div>
+                
+                </form>
             </div>
-            <hr>
+
+
+            <div class="header-div">
+                <h1 class="title-head">My Task Board📃</h1>
+                <h5 class="by-uziel-cohen">By Uziel Cohen!</h5>
+                <hr>
+                <span class="clock-time">
+                    <h3>Current-time:</h3>
+                    <!-- Current time -->
+                    <h1 id="current-time"></h1>
+                </span>
+     
+
+            </div>
+
         </header>
-<!-- Main -->
+        <!-- Main -->
         <main>
+
+
 
             <!-- Form -->
             <div class="div-form">
+
                 <form onsubmit="addTask()" id="noteForm">
 
                     <div class="input-group">
