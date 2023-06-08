@@ -83,6 +83,7 @@ header {
     border-radius: 1rem;
     background-image: url(assets/images/background.jpg);
     font-size: x-large;
+    color: white;
     
 }
 .google-submit-input{
