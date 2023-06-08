@@ -6,8 +6,24 @@ loadFromLocalStorage();
 
 
 
-/*----------------------------------Current Time------------------------------------------------------*/
+/*----------------------------------Current Time & Date------------------------------------------------------*/
+
+let today = new Date();
+
+    
+    let year = today.getFullYear();
+    let month = (today.getMonth() + 1).toString().padStart(2, '0');
+    let day = today.getDate().toString().padStart(2, '0');
+    let formattedDate = year + '-' + month + '-' + day;
+
+    
+    document.getElementById('dateBox').value = formattedDate;
+
+
+
 let time = document.getElementById("current-time");
+
+
 
 setInterval(() => {
     let date = new Date();
