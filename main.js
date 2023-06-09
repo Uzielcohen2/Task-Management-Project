@@ -30,6 +30,10 @@ setInterval(() => {
     time.innerHTML = date.toLocaleTimeString();
 }, 1000)
 
+// --------------------------------------------------------------------------------------------------------*/
+
+// Add task button
+
 
 function addTask() {
     // Prevent refresh
